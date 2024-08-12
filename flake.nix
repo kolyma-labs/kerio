@@ -49,7 +49,7 @@
 
       # Output package
       packages = forAllSystems (system: {
-        default = pkgsFor.${system}.callPackage ./. { };
+        default = pkgsFor.${system}.callPackage ./. { inherit pkgs; };
       });
     };
 }
