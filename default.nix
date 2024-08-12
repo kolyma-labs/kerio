@@ -28,6 +28,7 @@ pkgs.stdenv.mkDerivation rec {
 
     mkdir -p $out/bin/
     cp usr/sbin/kvpncsvc $out/bin/kvpncsvc
+    cp usr/sbin/kvpncsvc $out/bin/kerio-control-vpnclient
   '';
 
   meta = with lib; {
