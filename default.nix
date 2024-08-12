@@ -27,7 +27,7 @@ pkgs.stdenv.mkDerivation rec {
     ls -la
 
     mkdir -p $out/bin/
-    cp /usr/sbin/kvpncsvc $out/bin/kvpncsvc
+    cp usr/sbin/kvpncsvc $out/bin/kvpncsvc
   '';
 
   meta = with lib; {
