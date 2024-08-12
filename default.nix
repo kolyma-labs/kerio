@@ -1,6 +1,7 @@
-{ pkgs ? import <nixpkgs> { }, stdenv }:
+{ pkgs ? import <nixpkgs> { } }:
 let
   lib = pkgs.lib;
+  stdenv = pkgs.stdenv;
 in
 stdenv.mkDerivation rec {
   pname = "kerio-control-vpnclient";
