@@ -23,6 +23,8 @@ pkgs.stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out
     cp -r * $out/
+
+    ln -sf $out/usr/sbin/kvpncsvc $out/bin/kvpncsvc
   '';
 
   meta = with lib; {
