@@ -21,7 +21,7 @@ port for NixOS was necessary.
 ## Features
 
 - Reproducible Kerio Connect configurations
-- Makes use of 24.05
+- Makes use of 24.05 nixpkgs channel
 
 ## Running package
 
